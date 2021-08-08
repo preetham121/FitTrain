@@ -29,6 +29,12 @@ a {
   font-weight: bold !important;
 }
 
+.line1,
+.line2,
+.line3 {
+  transition: 0.5s ease-in-out;
+}
+
 /* HEADER */
 
 header {
@@ -67,6 +73,7 @@ header {
 
 .nav-links {
   display: flex;
+  transition: 0.5s ease-in-out;
 }
 
 .nav-links li {
@@ -97,6 +104,19 @@ header {
   margin: 5px;
 }
 
+.cross-mark1 {
+  transform: rotate(45deg) translate(-5px, 11px);
+  transition: 0.5s ease;
+}
+.cross-mark2 {
+  display: none;
+}
+
+.cross-mark3 {
+  transform: rotate(-45deg) translate(-5px, -11px);
+  transition: 0.5s ease;
+}
+
 /* ANIMATIONS */
 
 @keyframes nav-animation {
@@ -117,10 +137,9 @@ header {
   }
 
   .nav-links {
-    flex-direction: column;
     position: relative;
-    top: 65px;
-    right: 50%;
+    top: 10vh;
+    flex-direction: column;
     justify-content: center;
     height: 100%;
     text-align: center;
@@ -133,11 +152,10 @@ header {
     animation-name: nav-animation;
     animation-duration: 0.5s;
     animation-timing-function: cubic-bezier(0.5, 0.5, 0.5, 1.5);
-    width: 50vh;
   }
 
   .nav-links li {
-    padding: 25px !important;
+    padding: 30px !important;
     text-align: center;
     background: rgb(53, 53, 53, 0.8);
   }
@@ -158,8 +176,5 @@ header {
 @media (max-width: 475px) {
   .logo h1 {
     top: 16px;
-  }
-  .nav-links {
-    right: 12%;
   }
 }
