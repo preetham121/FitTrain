@@ -90,6 +90,7 @@
   height: 60px;
   border-radius: 100%;
   margin-bottom: 20px;
+  object-fit: cover;
 }
 
 .persona-review p {

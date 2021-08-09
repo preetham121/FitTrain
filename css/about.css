@@ -1,0 +1,75 @@
+header {
+  background: url("../img/e12.jpg") no-repeat center center/cover;
+}
+
+.showcase {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.showcase h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  padding: 10px;
+  padding-top: 0;
+}
+
+.showcase-invisible {
+  display: none;
+}
+
+.team-members h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.team div {
+  text-align: center;
+  padding: 20px;
+}
+
+.team div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.team div h2 {
+  font-size: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+}
+
+.team div p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .team {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .team {
+    grid-template-columns: 1fr;
+  }
+}
