@@ -1,0 +1,145 @@
+header {
+  background: center center/cover url("../img/barrel.jpg");
+}
+
+.showcase {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.showcase h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  padding: 10px;
+  padding-top: 0;
+}
+
+.showcase-invisible {
+  display: none;
+}
+
+#navbar ul li a {
+  font-size: 18px;
+}
+
+.member h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+.signing {
+  display: flex;
+  height: 100%;
+  width: 90%;
+  justify-content: flex-start;
+  box-shadow: 10px 8px #ddd;
+  margin: auto;
+}
+
+.signup-form {
+  color: #fff;
+  padding: 30px;
+  width: 50%;
+  background-image: linear-gradient(
+    120deg,
+    rgb(238, 5, 188),
+    rgb(228, 33, 130),
+    rgb(175, 29, 102),
+    rgb(219, 5, 155)
+  );
+}
+
+.signIn-form {
+  width: 50%;
+  padding: 30px;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 300;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.signIn-form form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20%;
+  justify-content: center !important;
+}
+
+label {
+  margin-top: 20px;
+}
+.signup-form form input {
+  padding: 10px;
+  border-color: transparent;
+  background: transparent;
+  border-bottom: 1px #fff solid;
+  color: #fff;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.signIn-form form input {
+  padding: 10px;
+  border-color: transparent;
+  background: transparent;
+  border-bottom: 1px #333 solid;
+  color: #333;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  border: #fff 1px solid;
+  color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  background: transparent;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+.signIn {
+  background: rgb(255, 0, 128);
+  /* font-size: 20px; */
+  padding-right: 25px !important;
+  padding-right: 25px !important;
+  border: none;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+@media (max-width: 768px) {
+  .signing {
+    display: flex;
+    flex-direction: column;
+  }
+  .signIn-form {
+    width: 100%;
+    padding: 30px;
+  }
+  .signup-form {
+    width: 100%;
+    padding: 30px;
+  }
+}
