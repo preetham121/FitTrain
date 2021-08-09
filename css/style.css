@@ -40,7 +40,7 @@
 }
 
 .btn-primary {
-  color: #fff;
+  color: #fff !important;
 }
 .section-1 {
   display: flex;
