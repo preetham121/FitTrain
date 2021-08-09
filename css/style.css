@@ -123,14 +123,16 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 708px) {
   .section-1 {
     flex-direction: column-reverse;
   }
-
   .section-1 div {
     width: 100%;
   }
+}
+
+@media (max-width: 520px) {
   .section-1 div h3 {
     font-size: 30px;
     padding-bottom: 10px;
